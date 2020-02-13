@@ -11,10 +11,7 @@ data class task(var id: Int, var title: String?, var description:String?, var pr
         parcel.readInt(),
         parcel.readString(),
         parcel.readString()
-    ) {
-
-    }
-
+    )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(id)
